@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+     
+      body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        font-family: sans-serif;
+      
+      }
+      
+      .shadow-class {
+        margin-left: 10px 10px;
+       
+        -webkit-box-shadow: 0px 0px 3px 0px rgba(18, 18, 18, 1);
+        -moz-box-shadow: 0px 0px 3px 0px rgba(18, 18, 18, 1);
+        box-shadow: 0px 0px 3px 0px rgba(18, 18, 18, 1);
+        padding: 40px;
+      }
+      
+      @media only screen and (max-width: 576px) {
+        .shadow-class {
+          margin: 0px;
+          padding: 40px;
+        }
+      }
+      
+      .flex-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      svg {
+        width: 50px;
+        margin: 40px 0px 10px 0px;
+        color: aquamarine !important;
+      }
+      
+      .product-image {
+        width: 150px;
+        border: 1px solid rgb(0, 0, 0, 0.2);
+        margin-right: 20px;
+        margin-top: 10px;
+      }
+      
+      .header {
+        font-size: 36px;
+        font-weight: 300;
+        line-height: 80px;
+        word-spacing: 5px;
+        letter-spacing: 4px;
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+       
+      }
+      
+      .order-no {
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: bold;
+      }
+      
+     
+      
+      .line {
+        width: 100%;
+        margin: auto;
+        height: 1px;
+        background: #141414;
+        opacity: 0.5;
+        color: black;
+      }
+      
+      .flex-details {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0px;
+      }
+      
+      .flex-details > div {
+        line-height: 20px;
+        font-size: 14px;
+        color: #464646 !important;
+      }
+      
+      .delivery-details {
+        font-weight: bold;
+      }
+      
+      #delivery-for {
+        font-size: 16px !important;
+        font-weight: bold;
+        color: black !important;
+        margin-bottom: 4px;
+      }
+      
+      .flex-con {
+        display: flex;
+        flex-direction: row;
+      }
+      
+      .product-contant {
+        margin-top: 10px;
+      }
+      
+      .product-name {
+        font-size: 16px;
+        color: black;
+      }
+      
+      .product-details {
+        font-style: italic;
+        letter-spacing: 1px;
+      }
+      
+      .item1 {
+        grid-area: header;
+        text-align: left;
+      }
+      
+      .item2 {
+        grid-area: lines;
+        vertical-align: bottom;
+        /* border: 1px dotted black; */
+        border-bottom: 1px dotted black;
+        margin-top: 10px;
+      }
+      
+      .item3 {
+        grid-area: price;
+        text-align: right;
+      }
+      
+      .grid-container {
+        display: grid;
+        margin: 10px 0px;
+        grid-template-areas: "header lines lines lines lines lines lines lines lines lines lines price";
+      }
+  
+
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Booking Customer Details</title>
+    <!-- <link rel="website icon" type="png" href="new.png"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row">
+   
+    <div class="shadow-class">
+      <div class="flex-header">
+   
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 369.946 369.946" style="enable-background:new 0 0 369.946 369.946;" xml:space="preserve">
+          <g>
+            <path style="fill:#010002;" d="M184.973,0C82.981,0,0,82.975,0,184.973s82.981,184.973,184.973,184.973
+                        s184.973-82.975,184.973-184.973S286.965,0,184.973,0z M150.777,263.873l-66.125-66.125l8.437-8.437l57.688,57.688l125.561-125.561
+                        l8.437,8.437L150.777,263.873z" />
+          </g>
+        </svg>
+        <div class="header">Your Order is succesfully placed</div>
+        <div class="order-no">Order no###########</div>
+
+      </div>
+      <div class="line"></div>
+      <div class="flex-details delivery-details">Delivery details:</div>
+      <div class="flex-details">
+        <div id="delivery-for">Delivery for</div>
+        <div>Mr. Sushant Singh</div>
+        <div>Phone no:<span>+91 9988012666</span></div>
+      </div>
+      <div class="flex-details">
+        <div id="delivery-for">Address</div>
+        <div>Flat 7, wenlake House, old stet, londan, Ec1v</div>
+        <div>9jH, United Kingdom</div>
+      </div>
+      <div class="flex-details">
+        <div id="delivery-for">Order Summary</div>
+        <div class="flex-con">
+          <img class="product-image" src="assets/img/hero-img.jpeg" alt="India Gas Oil">
+          <div class="product-contant">
+            <div class="product-name">Cylinder</div>
+            <div class="product-details">Price: <span>₹954.50</span></div>
+           
+            <div class="product-details">Customer Id: <span></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-container">
+        <div class="item1">Order-date</div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+      </div>
+      <div class="grid-container">
+        <div class="item1">Price</div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+      </div>
+      <div class="grid-container">
+        <div class="item1">Sub-total</div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+      </div>
+      <div class="grid-container">
+        <div class="item1">Customer Id</div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+      </div>
+      <div class="grid-container">
+        <div class="item1">Total</div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+       
+          
+      </div>
+    </div>
+</div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
